@@ -1,0 +1,14 @@
+footer{
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 30px;
+    padding: 10px;
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

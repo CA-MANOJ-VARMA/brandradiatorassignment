@@ -1,0 +1,98 @@
+.css-logo-itself{
+    width: 50px;
+    border-radius: 10px;
+    animation: logo 10s linear infinite;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+@keyframes logo{
+    0%{
+        transform: rotate(0);
+    }
+    /* 25%{
+        transform: rotate(72deg);
+    }
+    50%{
+        transform: rotate(144deg);
+    }
+    75%{
+        transform: rotate(288deg);
+    } */
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    padding: 5px 30px 5px 30px;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    position: fixed;
+    left:0;
+    right: 0;
+    top: 0;
+    height: 40px;
+}
+
+nav{
+    display: flex;
+    gap:20px;
+    font-weight: bold;
+    color: white;
+}
+
+a{
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.active-header,a:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    color: rgb(48, 249, 61);
+    background-color: #2a4c5c;
+}
+@media screen and (min-width:769px) {
+    .css-toggle-button-itself{
+        display: none;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    .css-toggle-button-itself{
+        background-color: transparent;
+        font-weight: 600;
+        font-size: 25px;
+        color: white;
+        border-width: 0;
+        animation: all 1s ease-in;
+    }
+
+    .css-navbar-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position:fixed;
+        top:50px;
+        background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+        left: 0px;
+        width: 100vw;
+        height: 100vh;
+        padding: 20px;
+        transition: 0.3s ease-in-out;
+    }
+    .css-navbar-display-hide{
+        display: none;
+        transition: all 0.5s ease-in-out;
+    }
+    
+}

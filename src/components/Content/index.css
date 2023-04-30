@@ -1,0 +1,149 @@
+
+.css-content-property{
+
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    
+/* min-height: 100vh; */
+/* padding-top: 30px; */
+padding-bottom: 60px;
+display: flex;
+flex-direction: column;
+}
+
+.css-landingpage-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    color:white
+    /* min-height: 100vh; */
+    
+}
+
+
+.css-form-section-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* align-items: center; */
+    padding-top:60px ;
+    min-height: 100vh;
+}
+
+.css-successful-container{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    color:greenyellow;
+    text-shadow: 2px 2px 5px;
+    font-size: 20px
+}
+
+.css-about-container{
+    padding-top:60px ;
+    min-height: 100vh;
+}
+
+.css-aboutus-heading{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 1px;
+}
+
+@media screen and (min-width:769px) {
+    .css-aboutus-heading{
+        font-size: 80px;
+        margin-top:0;
+        color: white;
+        /* text-shadow: 5px 5px 10px #2C5364; */
+
+    }
+
+    .css-aboutus-details{
+        margin-top: 60px;
+    }
+
+    .css-form-container{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        color: white;
+        gap:20px;
+    }
+}
+
+
+.css-aboutus-details{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.css-company-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width:500px;
+    height: 180px;
+    color: white;
+}
+
+p{
+    margin: 10px;
+    font-weight:bold ;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width:768px) {
+    .css-aboutus-heading{
+        font-size: 40px;
+        margin:0;
+        /* padding-right: 30px; */
+        /* width: 350px; */
+    }
+    .css-form-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        gap:20px;
+    }
+}
+
+
+
+
+.css-input-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.css-input-itself{
+    width: 200px;
+    height:25px;
+    border-radius: 7px;
+    border-width: 0;
+}
+
+.css-submit-button{
+    background-color: transparent;
+    border-width: 1px;
+    border-color: white;
+    width: 100px;
+    height: 30px;
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+
+}
+
+.css-submit-button:hover{
+    cursor: pointer;
+}
