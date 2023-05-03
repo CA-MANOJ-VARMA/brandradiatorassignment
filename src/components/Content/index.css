@@ -8,6 +8,7 @@
 padding-bottom: 60px;
 display: flex;
 flex-direction: column;
+
 }
 
 .css-landingpage-container{
@@ -51,10 +52,11 @@ flex-direction: column;
     -webkit-text-stroke-width: 1px;
 }
 
+
 @media screen and (min-width:769px) {
     .css-aboutus-heading{
         font-size: 80px;
-        margin-top:0;
+        /* margin-top:0; */
         color: white;
         /* text-shadow: 5px 5px 10px #2C5364; */
 
@@ -70,7 +72,34 @@ flex-direction: column;
         align-items: flex-end;
         color: white;
         gap:20px;
+        padding-top: 40px;
     }
+
+    .css-landingpage-heading1{
+        font-size: 50px;
+    }
+
+    .css-landingpage-heading2{
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* padding-top: 60px; */
+    }
+
+    .css-image-itself{
+        /* margin-top:60px ; */
+        width: 100px;
+        border-radius: 50px;
+    }
+
+    .css-image-h2-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
 }
 
 
@@ -101,12 +130,30 @@ p{
 }
 
 @media screen and (max-width:768px) {
+
+    .css-landingpage-heading1{
+        margin-top: 120px;
+        font-size: 20px;
+    }
+
+
+    .css-aboutus-details{
+        padding: 15px 0 0 0;
+        gap:15px;
+    }
+
+    .css-image-itself{
+        display: none;
+    }
+
     .css-aboutus-heading{
         font-size: 40px;
         margin:0;
-        /* padding-right: 30px; */
+
+        /* margin-right: 0px; */
         /* width: 350px; */
     }
+
     .css-form-container{
         display: flex;
         flex-direction: column;
@@ -115,6 +162,7 @@ p{
         color: white;
         gap:20px;
     }
+
 }
 
 

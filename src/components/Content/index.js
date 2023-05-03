@@ -54,12 +54,14 @@ const Content = () => {
 
 
 
-
   return (
     <div className='css-content-property'>
       <section className='css-landingpage-container' id="idLandingPage">
-        <h1>Brand Radiator Assignment</h1>
-        <h2>Project By Manoj Varma</h2>
+        
+        <h1 className='css-landingpage-heading1'>BRAND RADIATOR ASSIGNMENT</h1>
+        <div className='css-image-h2-container'>
+        <img src='https://img.freepik.com/free-psd/3d-rendering-thumb-up-hand_23-2149294142.jpg?w=740&t=st=1683133283~exp=1683133883~hmac=00ade84d4d8cec07fc91586e9b78821376d28409befb4c568f4d692a2bd96fdd' alt='image' className='css-image-itself'/><h2 className='css-landingpage-heading2'>Project By Manoj Varma</h2>
+        </div>
         </section>
         <section className='css-about-container' id="idAbout">
           <div>
@@ -85,15 +87,17 @@ const Content = () => {
         {!formSubmitted ? (<form className='css-form-container' onSubmit={formSubmitFunction}>
           <div className='css-input-container'>
             <label htmlFor='Name'><p>Name</p></label>
-            <input id='Name' className='css-input-itself' name="Name" onChange={onChangeFunction} value={formInput.name}/>
+            <input type='text'  id='Name' className='css-input-itself' name="Name" onChange={onChangeFunction} value={formInput.name} placeholder='Enter Your Name' />
           </div>
           <div className='css-input-container'>
             <label htmlFor='email'><p>Email</p></label>
-            <input id='email' className='css-input-itself'  name="Email" onChange={onChangeFunction}  value={formInput.email}/>
+            <input type='text'  id='email' className='css-input-itself'  name="Email" onChange={onChangeFunction}  value={formInput.email} 
+            placeholder='Enter Your Email' />
           </div>
           <div className='css-input-container'>
             <label htmlFor='phonenumber'><p>Phone Number</p></label>
-            <input id='phonenumber' className='css-input-itself'  name="Mobile" onChange={onChangeFunction}  value={formInput.phonenumber}/>
+            <input  type='number' id='phonenumber' className='css-input-itself'  name="Mobile" onChange={onChangeFunction}  value={formInput.phonenumber}
+            placeholder='Enter Your Phone Number' />
           </div>
           <button type='submit' className='css-submit-button'>Submit</button>
 
@@ -124,7 +128,7 @@ window.addEventListener('scroll',function(){
     
   }
   if (contactusText!==null){
-    contactusText.style.marginLeft = (value/10)*2+'px'
+    contactusText.style.marginLeft = (value/30)*2+'px'
   }
 
     // console.log((value/100)*window.innerWidth)
